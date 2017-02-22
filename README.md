@@ -3,7 +3,7 @@ Graphics
 
 A collection of C++ classes and functions to compute common graphical operations that interoperate with common creative-coding libraries.
 
-[![Build Status](https://travis-ci.org/takram-design-engineering/takram-graphics.svg)](https://travis-ci.org/takram-design-engineering/takram-graphics) [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
+[![Build Status](https://travis-ci.org/shotamatsuda/graphics.svg)](https://travis-ci.org/shotamatsuda/graphics) [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
 )](http://mit-license.org)
 
 ## Setup Guide
@@ -12,8 +12,8 @@ Run "setup.sh" inside "script" directory to initialize submodules and build depe
 
 ### Dependencies
 
-- [Algorithm](https://github.com/takram-design-engineering/takram-algorithm)
-- [Math](https://github.com/takram-design-engineering/takram-math)
+- [Algorithm](https://github.com/shotamatsuda/algorithm)
+- [Math](https://github.com/shotamatsuda/math)
 
 ### Submodules
 
@@ -23,7 +23,7 @@ Run "setup.sh" inside "script" directory to initialize submodules and build depe
 
 The MIT License
 
-Copyright (C) 2015-2016 Shota Matsuda
+Copyright (C) 2013-2017 Shota Matsuda
 
 Includes algorithm based on Skia http://skia.org/<br>
 Copyright (C) 2006 The Android Open Source Project<br>

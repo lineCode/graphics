@@ -1,9 +1,9 @@
 //
-//  takram/graphics/path.h
+//  shotamatsuda/graphics/path.h
 //
 //  The MIT License
 //
-//  Copyright (C) 2015 Shota Matsuda
+//  Copyright (C) 2013-2017 Shota Matsuda
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -25,9 +25,9 @@
 //
 
 #pragma once
-#ifndef TAKRAM_GRAPHICS_PATH_H_
-#define TAKRAM_GRAPHICS_PATH_H_
+#ifndef SHOTA_GRAPHICS_PATH_H_
+#define SHOTA_GRAPHICS_PATH_H_
 
-#include "takram/graphics/path2.h"
+#include "shotamatsuda/graphics/path2.h"
 
-#endif  // TAKRAM_GRAPHICS_PATH_H_
+#endif  // SHOTA_GRAPHICS_PATH_H_

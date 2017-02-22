@@ -1,9 +1,9 @@
 //
-//  takram/graphics/shape2.h
+//  shotamatsuda/graphics/shape2.h
 //
 //  The MIT License
 //
-//  Copyright (C) 2015 Shota Matsuda
+//  Copyright (C) 2013-2017 Shota Matsuda
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -25,20 +25,20 @@
 //
 
 #pragma once
-#ifndef TAKRAM_GRAPHICS_SHAPE2_H_
-#define TAKRAM_GRAPHICS_SHAPE2_H_
+#ifndef SHOTA_GRAPHICS_SHAPE2_H_
+#define SHOTA_GRAPHICS_SHAPE2_H_
 
 #include <cstddef>
 #include <list>
 #include <iterator>
 
-#include "takram/algorithm/leaf_iterator_iterator.h"
-#include "takram/graphics/path.h"
-#include "takram/math/promotion.h"
-#include "takram/math/rectangle.h"
-#include "takram/math/vector.h"
+#include "shotamatsuda/algorithm/leaf_iterator_iterator.h"
+#include "shotamatsuda/graphics/path.h"
+#include "shotamatsuda/math/promotion.h"
+#include "shotamatsuda/math/rectangle.h"
+#include "shotamatsuda/math/vector.h"
 
-namespace takram {
+namespace shotamatsuda {
 namespace graphics {
 
 template <class T, int D>
@@ -382,6 +382,6 @@ using graphics::Shape2i;
 using graphics::Shape2f;
 using graphics::Shape2d;
 
-}  // namespace takram
+}  // namespace shotamatsuda
 
-#endif  // TAKRAM_GRAPHICS_SHAPE2_H_
+#endif  // SHOTA_GRAPHICS_SHAPE2_H_

@@ -7,29 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		930955321A4FB46600D09023 /* libtakram_graphics.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9309550E1A4FB1FC00D09023 /* libtakram_graphics.dylib */; };
+		930955321A4FB46600D09023 /* libshota_graphics.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9309550E1A4FB1FC00D09023 /* libshota_graphics.dylib */; };
 		932809551B7B0A65000B0B4C /* path_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = 932809531B7B0A65000B0B4C /* path_test.cc */; };
 		932809561B7B0A65000B0B4C /* shape_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = 932809541B7B0A65000B0B4C /* shape_test.cc */; };
-		93B474411B648CD400613FB6 /* libtakram_math.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B474381B648CC400613FB6 /* libtakram_math.dylib */; };
-		93B474441B648CDA00613FB6 /* libtakram_math.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B4743A1B648CC400613FB6 /* libtakram_math.a */; };
-		93B474471B648CDF00613FB6 /* libtakram_math.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B4743C1B648CC400613FB6 /* libtakram_math.a */; };
-		93B4746A1B648D0600613FB6 /* libtakram_algorithm.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B474601B648CFE00613FB6 /* libtakram_algorithm.dylib */; };
-		93B4746D1B648D0B00613FB6 /* libtakram_algorithm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B474621B648CFE00613FB6 /* libtakram_algorithm.a */; };
-		93B474701B648D1100613FB6 /* libtakram_algorithm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B474641B648CFE00613FB6 /* libtakram_algorithm.a */; };
+		93B474411B648CD400613FB6 /* libshota_math.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B474381B648CC400613FB6 /* libshota_math.dylib */; };
+		93B474441B648CDA00613FB6 /* libshota_math.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B4743A1B648CC400613FB6 /* libshota_math.a */; };
+		93B474471B648CDF00613FB6 /* libshota_math.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B4743C1B648CC400613FB6 /* libshota_math.a */; };
+		93B4746A1B648D0600613FB6 /* libshota_algorithm.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B474601B648CFE00613FB6 /* libshota_algorithm.dylib */; };
+		93B4746D1B648D0B00613FB6 /* libshota_algorithm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B474621B648CFE00613FB6 /* libshota_algorithm.a */; };
+		93B474701B648D1100613FB6 /* libshota_algorithm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B474641B648CFE00613FB6 /* libshota_algorithm.a */; };
 		93B474741B648D8F00613FB6 /* graphics.cc in Sources */ = {isa = PBXBuildFile; fileRef = 93D7E4FD1B2C5A52006EA047 /* graphics.cc */; };
+		93B4E95C1E5D355F00233E24 /* color_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93B4E95B1E5D355F00233E24 /* color_test.cpp */; };
 		93C2E2841B8716BF007DD87D /* test.cc in Sources */ = {isa = PBXBuildFile; fileRef = 93C2E2831B8716BF007DD87D /* test.cc */; };
 		93D7E4FE1B2C5A52006EA047 /* graphics.cc in Sources */ = {isa = PBXBuildFile; fileRef = 93D7E4FD1B2C5A52006EA047 /* graphics.cc */; };
 		93D7E4FF1B2C5A52006EA047 /* graphics.cc in Sources */ = {isa = PBXBuildFile; fileRef = 93D7E4FD1B2C5A52006EA047 /* graphics.cc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		930955301A4FB46000D09023 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 93F8AD6717C8B39800310877 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9309550D1A4FB1FC00D09023;
-			remoteInfo = takram_triangulation_shared;
-		};
 		93B474371B648CC400613FB6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 93B4741F1B648C8800613FB6 /* math.xcodeproj */;
@@ -128,12 +122,19 @@
 			remoteGlobalIDString = 9397F58C1B647CAA00DFEDC9;
 			remoteInfo = algorithm_ios;
 		};
+		93DD80231DB3C27F006C994D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93F8AD6717C8B39800310877 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9309550D1A4FB1FC00D09023;
+			remoteInfo = graphics_shared;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		930955031A4FB1E200D09023 /* product.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = product.xcconfig; sourceTree = "<group>"; };
 		930955061A4FB1E200D09023 /* test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = test.xcconfig; sourceTree = "<group>"; };
-		9309550E1A4FB1FC00D09023 /* libtakram_graphics.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libtakram_graphics.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		9309550E1A4FB1FC00D09023 /* libshota_graphics.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libshota_graphics.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
 		930959301A5062D400D09023 /* project_debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_debug.xcconfig; sourceTree = "<group>"; };
 		930959311A5062D400D09023 /* project_release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_release.xcconfig; sourceTree = "<group>"; };
 		930959321A5062D400D09023 /* project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project.xcconfig; sourceTree = "<group>"; };
@@ -146,12 +147,13 @@
 		93A6DF861B6D426700D6C7E7 /* shape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shape.h; sourceTree = "<group>"; };
 		93A6DF871B6D426E00D6C7E7 /* path.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = path.h; sourceTree = "<group>"; };
 		93A6DF891B6D427700D6C7E7 /* command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = command.h; sourceTree = "<group>"; };
-		93B474091B648C4C00613FB6 /* libtakram_graphics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtakram_graphics.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		93B4741F1B648C8800613FB6 /* math.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = math.xcodeproj; path = "../takram-math/math.xcodeproj"; sourceTree = SOURCE_ROOT; };
-		93B474481B648CEF00613FB6 /* algorithm.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = algorithm.xcodeproj; path = "../takram-algorithm/algorithm.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		93B474091B648C4C00613FB6 /* libshota_graphics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libshota_graphics.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B4741F1B648C8800613FB6 /* math.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = math.xcodeproj; path = ../math/math.xcodeproj; sourceTree = SOURCE_ROOT; };
+		93B474481B648CEF00613FB6 /* algorithm.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = algorithm.xcodeproj; path = ../algorithm/algorithm.xcodeproj; sourceTree = SOURCE_ROOT; };
+		93B4E95B1E5D355F00233E24 /* color_test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = color_test.cpp; sourceTree = "<group>"; };
 		93C2E2831B8716BF007DD87D /* test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cc; sourceTree = "<group>"; };
 		93C2E2871B871781007DD87D /* channel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = channel.h; sourceTree = "<group>"; };
-		93C6B51519B22F5500A1CF93 /* libtakram_graphics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtakram_graphics.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C6B51519B22F5500A1CF93 /* libshota_graphics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libshota_graphics.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D7E4C11B2C5A47006EA047 /* color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = color.h; sourceTree = "<group>"; };
 		93D7E4C31B2C5A47006EA047 /* color3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = color3.h; sourceTree = "<group>"; };
 		93D7E4C51B2C5A47006EA047 /* color4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = color4.h; sourceTree = "<group>"; };
@@ -160,7 +162,7 @@
 		93D7E4CD1B2C5A47006EA047 /* shape2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shape2.h; sourceTree = "<group>"; };
 		93D7E4D41B2C5A47006EA047 /* graphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = graphics.h; sourceTree = "<group>"; };
 		93D7E4FD1B2C5A52006EA047 /* graphics.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = graphics.cc; sourceTree = "<group>"; };
-		93F1B9F6180282B0002A5A5C /* takram_graphics_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = takram_graphics_test; sourceTree = BUILT_PRODUCTS_DIR; };
+		93F1B9F6180282B0002A5A5C /* shota_graphics_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = shota_graphics_test; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F2949B1B5273AA00628F3C /* shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = shared.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,8 +171,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93B4746A1B648D0600613FB6 /* libtakram_algorithm.dylib in Frameworks */,
-				93B474411B648CD400613FB6 /* libtakram_math.dylib in Frameworks */,
+				93B4746A1B648D0600613FB6 /* libshota_algorithm.dylib in Frameworks */,
+				93B474411B648CD400613FB6 /* libshota_math.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,8 +180,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93B474701B648D1100613FB6 /* libtakram_algorithm.a in Frameworks */,
-				93B474471B648CDF00613FB6 /* libtakram_math.a in Frameworks */,
+				93B474701B648D1100613FB6 /* libshota_algorithm.a in Frameworks */,
+				93B474471B648CDF00613FB6 /* libshota_math.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,8 +189,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93B4746D1B648D0B00613FB6 /* libtakram_algorithm.a in Frameworks */,
-				93B474441B648CDA00613FB6 /* libtakram_math.a in Frameworks */,
+				93B4746D1B648D0B00613FB6 /* libshota_algorithm.a in Frameworks */,
+				93B474441B648CDA00613FB6 /* libshota_math.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +198,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				930955321A4FB46600D09023 /* libtakram_graphics.dylib in Frameworks */,
+				930955321A4FB46600D09023 /* libshota_graphics.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,10 +208,10 @@
 		930955021A4FB1E200D09023 /* config */ = {
 			isa = PBXGroup;
 			children = (
-				93F2949B1B5273AA00628F3C /* shared.xcconfig */,
 				930959321A5062D400D09023 /* project.xcconfig */,
 				930959301A5062D400D09023 /* project_debug.xcconfig */,
 				930959311A5062D400D09023 /* project_release.xcconfig */,
+				93F2949B1B5273AA00628F3C /* shared.xcconfig */,
 				930955031A4FB1E200D09023 /* product.xcconfig */,
 				930955061A4FB1E200D09023 /* test.xcconfig */,
 			);
@@ -219,10 +221,10 @@
 		93B474311B648CC400613FB6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				93B474381B648CC400613FB6 /* libtakram_math.dylib */,
-				93B4743A1B648CC400613FB6 /* libtakram_math.a */,
-				93B4743C1B648CC400613FB6 /* libtakram_math.a */,
-				93B4743E1B648CC400613FB6 /* takram_math_test */,
+				93B474381B648CC400613FB6 /* libshota_math.dylib */,
+				93B4743A1B648CC400613FB6 /* libshota_math.a */,
+				93B4743C1B648CC400613FB6 /* libshota_math.a */,
+				93B4743E1B648CC400613FB6 /* shota_math_test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,10 +232,10 @@
 		93B474591B648CFE00613FB6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				93B474601B648CFE00613FB6 /* libtakram_algorithm.dylib */,
-				93B474621B648CFE00613FB6 /* libtakram_algorithm.a */,
-				93B474641B648CFE00613FB6 /* libtakram_algorithm.a */,
-				93B474661B648CFE00613FB6 /* takram_algorithm_test */,
+				93B474601B648CFE00613FB6 /* libshota_algorithm.dylib */,
+				93B474621B648CFE00613FB6 /* libshota_algorithm.a */,
+				93B474641B648CFE00613FB6 /* libshota_algorithm.a */,
+				93B474661B648CFE00613FB6 /* shota_algorithm_test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -246,13 +248,14 @@
 				93D7E4C01B2C5A47006EA047 /* graphics */,
 			);
 			name = src;
-			path = src/takram;
+			path = src/shotamatsuda;
 			sourceTree = "<group>";
 		};
 		93D7E4261B2C20BE006EA047 /* test */ = {
 			isa = PBXGroup;
 			children = (
 				93C2E2831B8716BF007DD87D /* test.cc */,
+				93B4E95B1E5D355F00233E24 /* color_test.cpp */,
 				932809531B7B0A65000B0B4C /* path_test.cc */,
 				932809541B7B0A65000B0B4C /* shape_test.cc */,
 			);
@@ -295,10 +298,10 @@
 		93F8AD7017C8B39800310877 /* products */ = {
 			isa = PBXGroup;
 			children = (
-				9309550E1A4FB1FC00D09023 /* libtakram_graphics.dylib */,
-				93C6B51519B22F5500A1CF93 /* libtakram_graphics.a */,
-				93B474091B648C4C00613FB6 /* libtakram_graphics.a */,
-				93F1B9F6180282B0002A5A5C /* takram_graphics_test */,
+				9309550E1A4FB1FC00D09023 /* libshota_graphics.dylib */,
+				93C6B51519B22F5500A1CF93 /* libshota_graphics.a */,
+				93B474091B648C4C00613FB6 /* libshota_graphics.a */,
+				93F1B9F6180282B0002A5A5C /* shota_graphics_test */,
 			);
 			name = products;
 			sourceTree = "<group>";
@@ -321,8 +324,8 @@
 				93B474401B648CD000613FB6 /* PBXTargetDependency */,
 			);
 			name = graphics_shared;
-			productName = takram_triangulation;
-			productReference = 9309550E1A4FB1FC00D09023 /* libtakram_graphics.dylib */;
+			productName = graphics_shared;
+			productReference = 9309550E1A4FB1FC00D09023 /* libshota_graphics.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 		93B474081B648C4C00613FB6 /* graphics_ios */ = {
@@ -341,7 +344,7 @@
 			);
 			name = graphics_ios;
 			productName = graphics_ios;
-			productReference = 93B474091B648C4C00613FB6 /* libtakram_graphics.a */;
+			productReference = 93B474091B648C4C00613FB6 /* libshota_graphics.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		93C6B51419B22F5500A1CF93 /* graphics_static */ = {
@@ -359,8 +362,8 @@
 				93B474431B648CD700613FB6 /* PBXTargetDependency */,
 			);
 			name = graphics_static;
-			productName = sgss_opaque;
-			productReference = 93C6B51519B22F5500A1CF93 /* libtakram_graphics.a */;
+			productName = graphics_static;
+			productReference = 93C6B51519B22F5500A1CF93 /* libshota_graphics.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		93F1B9F5180282B0002A5A5C /* graphics_test */ = {
@@ -376,8 +379,8 @@
 				930955311A4FB46000D09023 /* PBXTargetDependency */,
 			);
 			name = graphics_test;
-			productName = sgss_opaque_test;
-			productReference = 93F1B9F6180282B0002A5A5C /* takram_graphics_test */;
+			productName = graphics_test;
+			productReference = 93F1B9F6180282B0002A5A5C /* shota_graphics_test */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -387,7 +390,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0710;
-				ORGANIZATIONNAME = sgss;
+				ORGANIZATIONNAME = shotamatsuda;
 				TargetAttributes = {
 					9309550D1A4FB1FC00D09023 = {
 						CreatedOnToolsVersion = 6.1;
@@ -428,59 +431,59 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		93B474381B648CC400613FB6 /* libtakram_math.dylib */ = {
+		93B474381B648CC400613FB6 /* libshota_math.dylib */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.dylib";
-			path = libtakram_math.dylib;
+			path = libshota_math.dylib;
 			remoteRef = 93B474371B648CC400613FB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		93B4743A1B648CC400613FB6 /* libtakram_math.a */ = {
+		93B4743A1B648CC400613FB6 /* libshota_math.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libtakram_math.a;
+			path = libshota_math.a;
 			remoteRef = 93B474391B648CC400613FB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		93B4743C1B648CC400613FB6 /* libtakram_math.a */ = {
+		93B4743C1B648CC400613FB6 /* libshota_math.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libtakram_math.a;
+			path = libshota_math.a;
 			remoteRef = 93B4743B1B648CC400613FB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		93B4743E1B648CC400613FB6 /* takram_math_test */ = {
+		93B4743E1B648CC400613FB6 /* shota_math_test */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
-			path = takram_math_test;
+			path = shota_math_test;
 			remoteRef = 93B4743D1B648CC400613FB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		93B474601B648CFE00613FB6 /* libtakram_algorithm.dylib */ = {
+		93B474601B648CFE00613FB6 /* libshota_algorithm.dylib */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.dylib";
-			path = libtakram_algorithm.dylib;
+			path = libshota_algorithm.dylib;
 			remoteRef = 93B4745F1B648CFE00613FB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		93B474621B648CFE00613FB6 /* libtakram_algorithm.a */ = {
+		93B474621B648CFE00613FB6 /* libshota_algorithm.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libtakram_algorithm.a;
+			path = libshota_algorithm.a;
 			remoteRef = 93B474611B648CFE00613FB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		93B474641B648CFE00613FB6 /* libtakram_algorithm.a */ = {
+		93B474641B648CFE00613FB6 /* libshota_algorithm.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libtakram_algorithm.a;
+			path = libshota_algorithm.a;
 			remoteRef = 93B474631B648CFE00613FB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		93B474661B648CFE00613FB6 /* takram_algorithm_test */ = {
+		93B474661B648CFE00613FB6 /* shota_algorithm_test */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
-			path = takram_algorithm_test;
+			path = shota_algorithm_test;
 			remoteRef = 93B474651B648CFE00613FB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -558,6 +561,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93C2E2841B8716BF007DD87D /* test.cc in Sources */,
+				93B4E95C1E5D355F00233E24 /* color_test.cpp in Sources */,
 				932809551B7B0A65000B0B4C /* path_test.cc in Sources */,
 				932809561B7B0A65000B0B4C /* shape_test.cc in Sources */,
 			);
@@ -569,7 +573,7 @@
 		930955311A4FB46000D09023 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9309550D1A4FB1FC00D09023 /* graphics_shared */;
-			targetProxy = 930955301A4FB46000D09023 /* PBXContainerItemProxy */;
+			targetProxy = 93DD80231DB3C27F006C994D /* PBXContainerItemProxy */;
 		};
 		93B474401B648CD000613FB6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -612,7 +616,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
 				INSTALL_PATH = "@rpath";
-				PRODUCT_NAME = "takram_$(PROJECT_NAME)";
+				PRODUCT_NAME = "shota_$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -625,7 +629,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
 				INSTALL_PATH = "@rpath";
-				PRODUCT_NAME = "takram_$(PROJECT_NAME)";
+				PRODUCT_NAME = "shota_$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -637,7 +641,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "takram_$(PROJECT_NAME)";
+				PRODUCT_NAME = "shota_$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -649,7 +653,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "takram_$(PROJECT_NAME)";
+				PRODUCT_NAME = "shota_$(PROJECT_NAME)";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -661,7 +665,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "takram_$(PROJECT_NAME)";
+				PRODUCT_NAME = "shota_$(PROJECT_NAME)";
 			};
 			name = Debug;
 		};
@@ -672,7 +676,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "takram_$(PROJECT_NAME)";
+				PRODUCT_NAME = "shota_$(PROJECT_NAME)";
 			};
 			name = Release;
 		};
@@ -681,7 +685,7 @@
 			baseConfigurationReference = 930955061A4FB1E200D09023 /* test.xcconfig */;
 			buildSettings = {
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/lib";
-				PRODUCT_NAME = "takram_$(PROJECT_NAME)_test";
+				PRODUCT_NAME = "shota_$(PROJECT_NAME)_test";
 			};
 			name = Debug;
 		};
@@ -690,7 +694,7 @@
 			baseConfigurationReference = 930955061A4FB1E200D09023 /* test.xcconfig */;
 			buildSettings = {
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/lib";
-				PRODUCT_NAME = "takram_$(PROJECT_NAME)_test";
+				PRODUCT_NAME = "shota_$(PROJECT_NAME)_test";
 			};
 			name = Release;
 		};
@@ -698,7 +702,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 930959301A5062D400D09023 /* project_debug.xcconfig */;
 			buildSettings = {
-				ENABLE_TESTABILITY = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -708,6 +712,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 930959311A5062D400D09023 /* project_release.xcconfig */;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				SDKROOT = macosx;
 			};
 			name = Release;

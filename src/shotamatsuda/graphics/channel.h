@@ -1,9 +1,9 @@
 //
-//  takram/graphics/channel.h
+//  shotamatsuda/graphics/channel.h
 //
 //  The MIT License
 //
-//  Copyright (C) 2015 Shota Matsuda
+//  Copyright (C) 2013-2017 Shota Matsuda
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -25,13 +25,13 @@
 //
 
 #pragma once
-#ifndef TAKRAM_GRAPHICS_CHANNEL_H_
-#define TAKRAM_GRAPHICS_CHANNEL_H_
+#ifndef SHOTA_GRAPHICS_CHANNEL_H_
+#define SHOTA_GRAPHICS_CHANNEL_H_
 
 #include <cassert>
 #include <ostream>
 
-namespace takram {
+namespace shotamatsuda {
 namespace graphics {
 
 enum class Channel : int {
@@ -58,6 +58,6 @@ inline std::ostream& operator<<(std::ostream& os, Channel channel) {
 
 using graphics::Channel;
 
-}  // namespace takram
+}  // namespace shotamatsuda
 
-#endif  // TAKRAM_GRAPHICS_CHANNEL_H_
+#endif  // SHOTA_GRAPHICS_CHANNEL_H_

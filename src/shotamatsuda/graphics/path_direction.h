@@ -1,9 +1,9 @@
 //
-//  takram/graphics/path_direction.h
+//  shotamatsuda/graphics/path_direction.h
 //
 //  The MIT License
 //
-//  Copyright (C) 2015 Shota Matsuda
+//  Copyright (C) 2013-2017 Shota Matsuda
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -25,13 +25,13 @@
 //
 
 #pragma once
-#ifndef TAKRAM_GRAPHICS_PATH_DIRECTION_H_
-#define TAKRAM_GRAPHICS_PATH_DIRECTION_H_
+#ifndef SHOTA_GRAPHICS_PATH_DIRECTION_H_
+#define SHOTA_GRAPHICS_PATH_DIRECTION_H_
 
 #include <cassert>
 #include <ostream>
 
-namespace takram {
+namespace shotamatsuda {
 namespace graphics {
 
 enum class PathDirection {
@@ -58,6 +58,6 @@ namespace gfx = graphics;
 
 using graphics::PathDirection;
 
-}  // namespace takram
+}  // namespace shotamatsuda
 
-#endif  // TAKRAM_GRAPHICS_PATH_DIRECTION_H_
+#endif  // SHOTA_GRAPHICS_PATH_DIRECTION_H_

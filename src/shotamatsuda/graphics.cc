@@ -1,9 +1,9 @@
 //
-//  takram/graphics/conic.h
+//  shotamatsuda/graphics.h
 //
 //  The MIT License
 //
-//  Copyright (C) 2015 Shota Matsuda
+//  Copyright (C) 2013-2017 Shota Matsuda
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -24,10 +24,13 @@
 //  DEALINGS IN THE SOFTWARE.
 //
 
-#pragma once
-#ifndef TAKRAM_GRAPHICS_CONIC_H_
-#define TAKRAM_GRAPHICS_CONIC_H_
+#include "shotamatsuda/graphics.h"
 
-#include "takram/graphics/conic2.h"
+namespace shotamatsuda {
+namespace graphics {
 
-#endif  // TAKRAM_GRAPHICS_CONIC_H_
+const double version_number = 1.0;
+const unsigned char version_string[] = "1.0";
+
+}  // namespace graphics
+}  // namespace shotamatsuda

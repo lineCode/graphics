@@ -3,7 +3,7 @@
 //
 //  The MIT License
 //
-//  Copyright (C) 2015 Shota Matsuda
+//  Copyright (C) 2013-2017 Shota Matsuda
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -26,10 +26,10 @@
 
 #include "gtest/gtest.h"
 
-#include "takram/graphics/path.h"
+#include "shotamatsuda/graphics/path.h"
 
-namespace takram {
+namespace shotamatsuda {
 namespace graphics {
 
 }  // namespace graphics
-}  // namespace takram
+}  // namespace shotamatsuda

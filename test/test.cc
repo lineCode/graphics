@@ -3,7 +3,7 @@
 //
 //  The MIT License
 //
-//  Copyright (C) 2015 Shota Matsuda
+//  Copyright (C) 2013-2017 Shota Matsuda
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -26,9 +26,9 @@
 
 #include "gtest/gtest.h"
 
-#include "takram/graphics.h"
+#include "shotamatsuda/graphics.h"
 
-namespace takram {
+namespace shotamatsuda {
 namespace graphics {
 
 template class Color<float, 3>;
@@ -39,4 +39,4 @@ template class Command<float, 2>;
 template class Conic<float, 2>;
 
 }  // namespace graphics
-}  // namespace takram
+}  // namespace shotamatsuda

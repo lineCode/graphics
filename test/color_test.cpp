@@ -1,9 +1,9 @@
 //
-//  takram/graphics.h
+//  path_test.cc
 //
 //  The MIT License
 //
-//  Copyright (C) 2015 Shota Matsuda
+//  Copyright (C) 2013-2017 Shota Matsuda
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -24,27 +24,12 @@
 //  DEALINGS IN THE SOFTWARE.
 //
 
-#pragma once
-#ifndef TAKRAM_GRAPHICS_H_
-#define TAKRAM_GRAPHICS_H_
+#include "gtest/gtest.h"
 
-namespace takram {
+#include "shotamatsuda/graphics/color.h"
+
+namespace shotamatsuda {
 namespace graphics {
 
-extern const double version_number;
-extern const unsigned char version_string[];
-
 }  // namespace graphics
-}  // namespace takram
-
-#include "takram/graphics/channel.h"
-#include "takram/graphics/color.h"
-#include "takram/graphics/depth.h"
-#include "takram/graphics/conic.h"
-#include "takram/graphics/command.h"
-#include "takram/graphics/command_type.h"
-#include "takram/graphics/path.h"
-#include "takram/graphics/path_direction.h"
-#include "takram/graphics/shape.h"
-
-#endif  // TAKRAM_GRAPHICS_H_
+}  // namespace shotamatsuda

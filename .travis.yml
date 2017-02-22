@@ -7,8 +7,8 @@ before_install:
   - sed -i '' 's/git@github.com:/https:\/\/github.com\//' .gitmodules
   - git submodule update --init --recursive
 before_script:
-  - git clone git://github.com/takram-design-engineering/takram-algorithm.git ../takram-algorithm
-  - git clone git://github.com/takram-design-engineering/takram-math.git ../takram-math
+  - git clone git://github.com/shotamatsuda/algorithm.git ../algorithm
+  - git clone git://github.com/shotamatsuda/math.git ../math
   - mkdir build
   - cd build
   - cmake ..

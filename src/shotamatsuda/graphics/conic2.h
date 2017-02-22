@@ -1,9 +1,9 @@
 //
-//  takram/graphics/conic2.h
+//  shotamatsuda/graphics/conic2.h
 //
 //  The MIT License
 //
-//  Copyright (C) 2015 Shota Matsuda
+//  Copyright (C) 2013-2017 Shota Matsuda
 //
 //  Includes algorithm based on Skia <skia.org>
 //  Copyright (C) 2006 The Android Open Source Project
@@ -29,8 +29,8 @@
 //
 
 #pragma once
-#ifndef TAKRAM_GRAPHICS_CONIC2_H_
-#define TAKRAM_GRAPHICS_CONIC2_H_
+#ifndef SHOTA_GRAPHICS_CONIC2_H_
+#define SHOTA_GRAPHICS_CONIC2_H_
 
 #include <algorithm>
 #include <array>
@@ -40,10 +40,10 @@
 #include <utility>
 #include <vector>
 
-#include "takram/math/promotion.h"
-#include "takram/math/vector.h"
+#include "shotamatsuda/math/promotion.h"
+#include "shotamatsuda/math/vector.h"
 
-namespace takram {
+namespace shotamatsuda {
 namespace graphics {
 
 // Based on Skia's SkGeometry
@@ -186,6 +186,6 @@ using graphics::Conic2i;
 using graphics::Conic2f;
 using graphics::Conic2d;
 
-}  // namespace takram
+}  // namespace shotamatsuda
 
-#endif  // TAKRAM_GRAPHICS_CONIC2_H_
+#endif  // SHOTA_GRAPHICS_CONIC2_H_

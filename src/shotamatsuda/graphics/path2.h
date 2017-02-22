@@ -1,9 +1,9 @@
 //
-//  takram/graphics/path2.h
+//  shotamatsuda/graphics/path2.h
 //
 //  The MIT License
 //
-//  Copyright (C) 2015 Shota Matsuda
+//  Copyright (C) 2013-2017 Shota Matsuda
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -25,8 +25,8 @@
 //
 
 #pragma once
-#ifndef TAKRAM_GRAPHICS_PATH2_H_
-#define TAKRAM_GRAPHICS_PATH2_H_
+#ifndef SHOTA_GRAPHICS_PATH2_H_
+#define SHOTA_GRAPHICS_PATH2_H_
 
 #include <algorithm>
 #include <cassert>
@@ -39,16 +39,16 @@
 #include <type_traits>
 #include <utility>
 
-#include "takram/graphics/command.h"
-#include "takram/graphics/conic.h"
-#include "takram/graphics/path_direction.h"
-#include "takram/math/constants.h"
-#include "takram/math/promotion.h"
-#include "takram/math/rectangle.h"
-#include "takram/math/roots.h"
-#include "takram/math/vector.h"
+#include "shotamatsuda/graphics/command.h"
+#include "shotamatsuda/graphics/conic.h"
+#include "shotamatsuda/graphics/path_direction.h"
+#include "shotamatsuda/math/constants.h"
+#include "shotamatsuda/math/promotion.h"
+#include "shotamatsuda/math/rectangle.h"
+#include "shotamatsuda/math/roots.h"
+#include "shotamatsuda/math/vector.h"
 
-namespace takram {
+namespace shotamatsuda {
 namespace graphics {
 
 extern void *enabler;
@@ -771,6 +771,6 @@ using graphics::Path2i;
 using graphics::Path2f;
 using graphics::Path2d;
 
-}  // namespace takram
+}  // namespace shotamatsuda
 
-#endif  // TAKRAM_GRAPHICS_PATH2_H_
+#endif  // SHOTA_GRAPHICS_PATH2_H_

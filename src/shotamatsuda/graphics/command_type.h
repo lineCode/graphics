@@ -1,5 +1,5 @@
 //
-//  shared.xcconfig
+//  shotamatsuda/graphics/command_type.h
 //
 //  The MIT License
 //
@@ -24,13 +24,44 @@
 //  DEALINGS IN THE SOFTWARE.
 //
 
-// Boost
-BOOST_HEADER_SEARCH_PATHS = "$(BOOST_DIR)/include"
-OPENCV_HEADER_SEARCH_PATHS = "$(OPENCV_DIR)/include"
-OPENFRAMEWORKS_HEADER_SEARCH_PATHS = "$(OPENFRAMEWORKS_DIR)/libs/openFrameworks/**" "$(OPENFRAMEWORKS_DIR)/libs/freetype/include" "$(OPENFRAMEWORKS_DIR)/libs/freetype/include/freetype2" "$(OPENFRAMEWORKS_DIR)/libs/poco/include" "$(OPENFRAMEWORKS_DIR)/libs/fmodex/include" "$(OPENFRAMEWORKS_DIR)/libs/glew/include" "$(OPENFRAMEWORKS_DIR)/libs/FreeImage/include" "$(OPENFRAMEWORKS_DIR)/libs/tess2/include" "$(OPENFRAMEWORKS_DIR)/libs/cairo/include/cairo" "$(OPENFRAMEWORKS_DIR)/libs/rtAudio/include" "$(OPENFRAMEWORKS_DIR)/libs/glfw/include"
-CINDER_HEADER_SEARCH_PATHS = "$(CINDER_DIR)/include"
-NANOVG_HEADER_SEARCH_PATHS = "$(NANOVG_DIR)"
+#pragma once
+#ifndef SHOTA_GRAPHICS_COMMAND_TYPE_H_
+#define SHOTA_GRAPHICS_COMMAND_TYPE_H_
 
-// Search Paths
-SHOTAMATSUDA_MATH_HEADER_SEARCH_PATHS = $(BOOST_HEADER_SEARCH_PATHS) $(OPENCV_HEADER_SEARCH_PATHS) $(OPENFRAMEWORKS_HEADER_SEARCH_PATHS) $(CINDER_HEADER_SEARCH_PATHS) $(NANOVG_HEADER_SEARCH_PATHS)
-SHOTAMATSUDA_MATH_USER_HEADER_SEARCH_PATHS = "$(SHOTAMATSUDA_MATH_DIR)/src" "$(SHOTAMATSUDA_MATH_DIR)/lib"
+#include <cassert>
+#include <ostream>
+
+namespace shotamatsuda {
+namespace graphics {
+
+enum class CommandType {
+  MOVE,
+  LINE,
+  QUADRATIC,
+  CONIC,
+  CUBIC,
+  CLOSE
+};
+
+inline std::ostream& operator<<(std::ostream& os, CommandType type) {
+  switch (type) {
+    case CommandType::MOVE: os << "move"; break;
+    case CommandType::LINE: os << "line"; break;
+    case CommandType::QUADRATIC: os << "quadratic"; break;
+    case CommandType::CONIC: os << "conic"; break;
+    case CommandType::CUBIC: os << "cubic"; break;
+    case CommandType::CLOSE: os << "close"; break;
+    default:
+      assert(false);
+      break;
+  }
+  return os;
+}
+
+}  // namespace graphics
+
+namespace gfx = graphics;
+
+}  // namespace shotamatsuda
+
+#endif  // SHOTA_GRAPHICS_COMMAND_TYPE_H_

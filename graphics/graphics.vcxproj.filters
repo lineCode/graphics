@@ -6,54 +6,54 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\src\takram\graphics\channel.h">
+    <ClInclude Include="..\src\shotamatsuda\graphics\channel.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\takram\graphics\color.h">
+    <ClInclude Include="..\src\shotamatsuda\graphics\color.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\takram\graphics\color3.h">
+    <ClInclude Include="..\src\shotamatsuda\graphics\color3.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\takram\graphics\color4.h">
+    <ClInclude Include="..\src\shotamatsuda\graphics\color4.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\takram\graphics\command.h">
+    <ClInclude Include="..\src\shotamatsuda\graphics\command.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\takram\graphics\command_type.h">
+    <ClInclude Include="..\src\shotamatsuda\graphics\command_type.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\takram\graphics\conic.h">
+    <ClInclude Include="..\src\shotamatsuda\graphics\conic.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\takram\graphics\conic2.h">
+    <ClInclude Include="..\src\shotamatsuda\graphics\conic2.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\takram\graphics\depth.h">
+    <ClInclude Include="..\src\shotamatsuda\graphics\depth.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\takram\graphics\path.h">
+    <ClInclude Include="..\src\shotamatsuda\graphics\path.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\takram\graphics\path2.h">
+    <ClInclude Include="..\src\shotamatsuda\graphics\path2.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\takram\graphics\path_direction.h">
+    <ClInclude Include="..\src\shotamatsuda\graphics\path_direction.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\takram\graphics\shape.h">
+    <ClInclude Include="..\src\shotamatsuda\graphics\shape.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\takram\graphics\shape2.h">
+    <ClInclude Include="..\src\shotamatsuda\graphics\shape2.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\takram\graphics.h">
+    <ClInclude Include="..\src\shotamatsuda\graphics.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\takram\graphics.cc">
+    <ClCompile Include="..\src\shotamatsuda\graphics.cc">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,9 +1,9 @@
 //
-//  takram/graphics/command.h
+//  shotamatsuda/graphics/command.h
 //
 //  The MIT License
 //
-//  Copyright (C) 2015 Shota Matsuda
+//  Copyright (C) 2013-2017 Shota Matsuda
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -25,17 +25,17 @@
 //
 
 #pragma once
-#ifndef TAKRAM_GRAPHICS_COMMAND_H_
-#define TAKRAM_GRAPHICS_COMMAND_H_
+#ifndef SHOTA_GRAPHICS_COMMAND_H_
+#define SHOTA_GRAPHICS_COMMAND_H_
 
 #include <cassert>
 #include <ostream>
 
-#include "takram/graphics/command_type.h"
-#include "takram/math/promotion.h"
-#include "takram/math/vector.h"
+#include "shotamatsuda/graphics/command_type.h"
+#include "shotamatsuda/math/promotion.h"
+#include "shotamatsuda/math/vector.h"
 
-namespace takram {
+namespace shotamatsuda {
 namespace graphics {
 
 template <class T, int D>
@@ -196,6 +196,6 @@ inline std::ostream& operator<<(std::ostream& os, const Command<T, D>& other) {
 
 namespace gfx = graphics;
 
-}  // namespace takram
+}  // namespace shotamatsuda
 
-#endif  // TAKRAM_GRAPHICS_COMMAND_H_
+#endif  // SHOTA_GRAPHICS_COMMAND_H_

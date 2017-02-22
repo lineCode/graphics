@@ -19,24 +19,24 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\src\takram\graphics.h" />
-    <ClInclude Include="..\src\takram\graphics\channel.h" />
-    <ClInclude Include="..\src\takram\graphics\color.h" />
-    <ClInclude Include="..\src\takram\graphics\color3.h" />
-    <ClInclude Include="..\src\takram\graphics\color4.h" />
-    <ClInclude Include="..\src\takram\graphics\command.h" />
-    <ClInclude Include="..\src\takram\graphics\command_type.h" />
-    <ClInclude Include="..\src\takram\graphics\conic.h" />
-    <ClInclude Include="..\src\takram\graphics\conic2.h" />
-    <ClInclude Include="..\src\takram\graphics\depth.h" />
-    <ClInclude Include="..\src\takram\graphics\path.h" />
-    <ClInclude Include="..\src\takram\graphics\path2.h" />
-    <ClInclude Include="..\src\takram\graphics\path_direction.h" />
-    <ClInclude Include="..\src\takram\graphics\shape.h" />
-    <ClInclude Include="..\src\takram\graphics\shape2.h" />
+    <ClInclude Include="..\src\shotamatsuda\graphics.h" />
+    <ClInclude Include="..\src\shotamatsuda\graphics\channel.h" />
+    <ClInclude Include="..\src\shotamatsuda\graphics\color.h" />
+    <ClInclude Include="..\src\shotamatsuda\graphics\color3.h" />
+    <ClInclude Include="..\src\shotamatsuda\graphics\color4.h" />
+    <ClInclude Include="..\src\shotamatsuda\graphics\command.h" />
+    <ClInclude Include="..\src\shotamatsuda\graphics\command_type.h" />
+    <ClInclude Include="..\src\shotamatsuda\graphics\conic.h" />
+    <ClInclude Include="..\src\shotamatsuda\graphics\conic2.h" />
+    <ClInclude Include="..\src\shotamatsuda\graphics\depth.h" />
+    <ClInclude Include="..\src\shotamatsuda\graphics\path.h" />
+    <ClInclude Include="..\src\shotamatsuda\graphics\path2.h" />
+    <ClInclude Include="..\src\shotamatsuda\graphics\path_direction.h" />
+    <ClInclude Include="..\src\shotamatsuda\graphics\shape.h" />
+    <ClInclude Include="..\src\shotamatsuda\graphics\shape2.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\takram\graphics.cc" />
+    <ClCompile Include="..\src\shotamatsuda\graphics.cc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{94341CDF-2064-48A1-BAFB-C21AC3DE3B84}</ProjectGuid>
@@ -110,7 +110,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(SolutionDir)src;$(SolutionDir)..\takram-algorithm\src;$(SolutionDir)..\takram-math\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(SolutionDir)src;$(SolutionDir)..\algorithm\src;$(SolutionDir)..\math\src</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4068</DisableSpecificWarnings>
     </ClCompile>
     <Link>
@@ -122,7 +122,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(SolutionDir)src;$(SolutionDir)..\takram-algorithm\src;$(SolutionDir)..\takram-math\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(SolutionDir)src;$(SolutionDir)..\algorithm\src;$(SolutionDir)..\math\src</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <DisableSpecificWarnings>4068</DisableSpecificWarnings>
     </ClCompile>
@@ -138,7 +138,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(SolutionDir)src;$(SolutionDir)..\takram-algorithm\src;$(SolutionDir)..\takram-math\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(SolutionDir)src;$(SolutionDir)..\algorithm\src;$(SolutionDir)..\math\src</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4068</DisableSpecificWarnings>
     </ClCompile>
     <Link>
@@ -154,7 +154,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(SolutionDir)src;$(SolutionDir)..\takram-algorithm\src;$(SolutionDir)..\takram-math\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(SolutionDir)src;$(SolutionDir)..\algorithm\src;$(SolutionDir)..\math\src</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <DisableSpecificWarnings>4068</DisableSpecificWarnings>
     </ClCompile>

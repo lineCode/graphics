@@ -1,9 +1,9 @@
 //
-//  takram/graphics/color3.h
+//  shotamatsuda/graphics/color3.h
 //
 //  The MIT License
 //
-//  Copyright (C) 2015 Shota Matsuda
+//  Copyright (C) 2013-2017 Shota Matsuda
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -25,35 +25,35 @@
 //
 
 #pragma once
-#ifndef TAKRAM_GRAPHICS_COLOR3_H_
-#define TAKRAM_GRAPHICS_COLOR3_H_
+#ifndef SHOTA_GRAPHICS_COLOR3_H_
+#define SHOTA_GRAPHICS_COLOR3_H_
 
 #include <cstdint>
 #include <initializer_list>
 #include <ostream>
 #include <tuple>
 
-#if TAKRAM_HAS_OPENCV
+#if SHOTA_HAS_OPENCV
 #include "opencv2/core/core.hpp"
-#endif  // TAKRAM_HAS_OPENCV
+#endif  // SHOTA_HAS_OPENCV
 
-#if TAKRAM_HAS_OPENFRAMEWORKS
+#if SHOTA_HAS_OPENFRAMEWORKS
 #include "ofColor.h"
-#endif  // TAKRAM_HAS_OPENFRAMEWORKS
+#endif  // SHOTA_HAS_OPENFRAMEWORKS
 
-#if TAKRAM_HAS_CINDER
+#if SHOTA_HAS_CINDER
 #include "cinder/Color.h"
-#endif  // TAKRAM_HAS_CINDER
+#endif  // SHOTA_HAS_CINDER
 
-#if TAKRAM_HAS_NANOVG
+#if SHOTA_HAS_NANOVG
 #include "nanovg.h"
-#endif  // TAKRAM_HAS_NANOVG
+#endif  // SHOTA_HAS_NANOVG
 
-#include "takram/graphics/channel.h"
-#include "takram/graphics/depth.h"
-#include "takram/math/vector.h"
+#include "shotamatsuda/graphics/channel.h"
+#include "shotamatsuda/graphics/depth.h"
+#include "shotamatsuda/math/vector.h"
 
-namespace takram {
+namespace shotamatsuda {
 namespace graphics {
 
 template <class T, int C>
@@ -87,27 +87,27 @@ class Color<T, 3> final {
   template <class U>
   Color(const Color3<U>& other);
 
-#if TAKRAM_HAS_OPENCV
+#if SHOTA_HAS_OPENCV
   template <class U>
   Color(const cv::Vec<U, 3>& other);
   operator cv::Vec<T, 3>() const;
-#endif  // TAKRAM_HAS_OPENCV
+#endif  // SHOTA_HAS_OPENCV
 
-#if TAKRAM_HAS_OPENFRAMEWORKS
+#if SHOTA_HAS_OPENFRAMEWORKS
   template <class U>
   explicit Color(const ofColor_<U>& other);
   operator ofColor_<T>() const;
-#endif  // TAKRAM_HAS_OPENFRAMEWORKS
+#endif  // SHOTA_HAS_OPENFRAMEWORKS
 
-#if TAKRAM_HAS_CINDER
+#if SHOTA_HAS_CINDER
   Color(const ci::ColorT<U>& other);
   operator ci::ColorT<T>() const;
-#endif  // TAKRAM_HAS_CINDER
+#endif  // SHOTA_HAS_CINDER
 
-#if TAKRAM_HAS_NANOVG
+#if SHOTA_HAS_NANOVG
   explicit Color(const NVGcolor& other);
   operator NVGcolor() const;
-#endif  // TAKRAM_HAS_NANOVG
+#endif  // SHOTA_HAS_NANOVG
 
   // Explicit conversion
   template <class U>
@@ -222,7 +222,7 @@ inline Color<T, 3>::Color(const Color3<U>& other)
              Depth<T>::convert(other.g),
              Depth<T>::convert(other.b)) {}
 
-#if TAKRAM_HAS_OPENCV
+#if SHOTA_HAS_OPENCV
 
 template <class T>
 template <class U>
@@ -238,9 +238,9 @@ inline Color<T, 3>::operator cv::Vec<T, 3>() const {
                        Depth<T>::convert(b));
 }
 
-#endif  // TAKRAM_HAS_OPENCV
+#endif  // SHOTA_HAS_OPENCV
 
-#if TAKRAM_HAS_OPENFRAMEWORKS
+#if SHOTA_HAS_OPENFRAMEWORKS
 
 template <class T>
 template <class U>
@@ -256,9 +256,9 @@ inline Color<T, 3>::operator ofColor_<T>() const {
                      Depth<T>::convert(b));
 }
 
-#endif  // TAKRAM_HAS_OPENFRAMEWORKS
+#endif  // SHOTA_HAS_OPENFRAMEWORKS
 
-#if TAKRAM_HAS_CINDER
+#if SHOTA_HAS_CINDER
 
 template <class T>
 template <class U>
@@ -274,9 +274,9 @@ inline Color<T, 3>::operator ci::ColorT<T>() const {
                        Depth<T>::convert(b));
 }
 
-#endif  // TAKRAM_HAS_CINDER
+#endif  // SHOTA_HAS_CINDER
 
-#if TAKRAM_HAS_NANOVG
+#if SHOTA_HAS_NANOVG
 
 template <class T>
 inline Color<T, 3>::Color(const NVGcolor& other)
@@ -294,7 +294,7 @@ inline Color<T, 3>::operator NVGcolor() const {
   }}};
 }
 
-#endif  // TAKRAM_HAS_NANOVG
+#endif  // SHOTA_HAS_NANOVG
 
 #pragma mark Explicit conversion
 
@@ -480,6 +480,6 @@ using graphics::Color3i;
 using graphics::Color3f;
 using graphics::Color3d;
 
-}  // namespace takram
+}  // namespace shotamatsuda
 
-#endif  // TAKRAM_GRAPHICS_COLOR3_H_
+#endif  // SHOTA_GRAPHICS_COLOR3_H_

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/sgss/Github/takram-graphics/graphics.xcodeproj">
+      location = "self:graphics.xcodeproj">
    </FileRef>
 </Workspace>

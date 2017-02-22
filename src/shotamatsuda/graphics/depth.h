@@ -1,9 +1,9 @@
 //
-//  takram/graphics/depth.h
+//  shotamatsuda/graphics/depth.h
 //
 //  The MIT License
 //
-//  Copyright (C) 2015 Shota Matsuda
+//  Copyright (C) 2013-2017 Shota Matsuda
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -25,16 +25,16 @@
 //
 
 #pragma once
-#ifndef TAKRAM_GRAPHICS_DEPTH_H_
-#define TAKRAM_GRAPHICS_DEPTH_H_
+#ifndef SHOTA_GRAPHICS_DEPTH_H_
+#define SHOTA_GRAPHICS_DEPTH_H_
 
 #include <cmath>
 #include <limits>
 
-#include "takram/math/functions.h"
-#include "takram/math/enablers.h"
+#include "shotamatsuda/math/functions.h"
+#include "shotamatsuda/math/enablers.h"
 
-namespace takram {
+namespace shotamatsuda {
 namespace graphics {
 
 template <class T, class Enable = void>
@@ -120,6 +120,6 @@ namespace gfx = graphics;
 
 using graphics::Depth;
 
-}  // namespace takram
+}  // namespace shotamatsuda
 
-#endif  // TAKRAM_GRAPHICS_DEPTH_H_
+#endif  // SHOTA_GRAPHICS_DEPTH_H_

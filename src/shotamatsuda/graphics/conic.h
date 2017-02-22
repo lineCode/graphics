@@ -1,9 +1,9 @@
 //
-//  takram/graphics/command_type.h
+//  shotamatsuda/graphics/conic.h
 //
 //  The MIT License
 //
-//  Copyright (C) 2015 Shota Matsuda
+//  Copyright (C) 2013-2017 Shota Matsuda
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a
 //  copy of this software and associated documentation files (the "Software"),
@@ -25,43 +25,9 @@
 //
 
 #pragma once
-#ifndef TAKRAM_GRAPHICS_COMMAND_TYPE_H_
-#define TAKRAM_GRAPHICS_COMMAND_TYPE_H_
+#ifndef SHOTA_GRAPHICS_CONIC_H_
+#define SHOTA_GRAPHICS_CONIC_H_
 
-#include <cassert>
-#include <ostream>
+#include "shotamatsuda/graphics/conic2.h"
 
-namespace takram {
-namespace graphics {
-
-enum class CommandType {
-  MOVE,
-  LINE,
-  QUADRATIC,
-  CONIC,
-  CUBIC,
-  CLOSE
-};
-
-inline std::ostream& operator<<(std::ostream& os, CommandType type) {
-  switch (type) {
-    case CommandType::MOVE: os << "move"; break;
-    case CommandType::LINE: os << "line"; break;
-    case CommandType::QUADRATIC: os << "quadratic"; break;
-    case CommandType::CONIC: os << "conic"; break;
-    case CommandType::CUBIC: os << "cubic"; break;
-    case CommandType::CLOSE: os << "close"; break;
-    default:
-      assert(false);
-      break;
-  }
-  return os;
-}
-
-}  // namespace graphics
-
-namespace gfx = graphics;
-
-}  // namespace takram
-
-#endif  // TAKRAM_GRAPHICS_COMMAND_TYPE_H_
+#endif  // SHOTA_GRAPHICS_CONIC_H_
