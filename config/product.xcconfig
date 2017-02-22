@@ -29,8 +29,12 @@ OPENCV_DIR = /usr/local
 OPENFRAMEWORKS_DIR = $(PROJECT_DIR)/../openframeworks
 CINDER_DIR = $(PROJECT_DIR)/../cinder
 NANOVG_DIR = $(PROJECT_DIR)/../nanovg
+SHOTAMATSUDA_ALGORITHM_DIR = $(PROJECT_DIR)/../algorithm
+SHOTAMATSUDA_MATH_DIR = $(PROJECT_DIR)/../math
 SHOTAMATSUDA_GRAPHICS_DIR = $(PROJECT_DIR)
 
+#include "../../algorithm/config/shared.xcconfig"
+#include "../../math/config/shared.xcconfig"
 #include "shared.xcconfig"
 
 // Search Paths

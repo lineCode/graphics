@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		930955321A4FB46600D09023 /* libshota_graphics.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9309550E1A4FB1FC00D09023 /* libshota_graphics.dylib */; };
+		930955321A4FB46600D09023 /* libshota_graphics.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9309550E1A4FB1FC00D09023 /* libshota_graphics.dylib */; };
 		932809551B7B0A65000B0B4C /* path_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = 932809531B7B0A65000B0B4C /* path_test.cc */; };
 		932809561B7B0A65000B0B4C /* shape_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = 932809541B7B0A65000B0B4C /* shape_test.cc */; };
 		93B474411B648CD400613FB6 /* libshota_math.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B474381B648CC400613FB6 /* libshota_math.dylib */; };
@@ -134,7 +134,7 @@
 /* Begin PBXFileReference section */
 		930955031A4FB1E200D09023 /* product.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = product.xcconfig; sourceTree = "<group>"; };
 		930955061A4FB1E200D09023 /* test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = test.xcconfig; sourceTree = "<group>"; };
-		9309550E1A4FB1FC00D09023 /* libshota_graphics.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libshota_graphics.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9309550E1A4FB1FC00D09023 /* libshota_graphics.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libshota_graphics.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		930959301A5062D400D09023 /* project_debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_debug.xcconfig; sourceTree = "<group>"; };
 		930959311A5062D400D09023 /* project_release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project_release.xcconfig; sourceTree = "<group>"; };
 		930959321A5062D400D09023 /* project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project.xcconfig; sourceTree = "<group>"; };
@@ -198,7 +198,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				930955321A4FB46600D09023 /* libshota_graphics.dylib in Frameworks */,
+				930955321A4FB46600D09023 /* libshota_graphics.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +298,7 @@
 		93F8AD7017C8B39800310877 /* products */ = {
 			isa = PBXGroup;
 			children = (
-				9309550E1A4FB1FC00D09023 /* libshota_graphics.dylib */,
+				9309550E1A4FB1FC00D09023 /* libshota_graphics.dylib */,
 				93C6B51519B22F5500A1CF93 /* libshota_graphics.a */,
 				93B474091B648C4C00613FB6 /* libshota_graphics.a */,
 				93F1B9F6180282B0002A5A5C /* shota_graphics_test */,
@@ -325,7 +325,7 @@
 			);
 			name = graphics_shared;
 			productName = graphics_shared;
-			productReference = 9309550E1A4FB1FC00D09023 /* libshota_graphics.dylib */;
+			productReference = 9309550E1A4FB1FC00D09023 /* libshota_graphics.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 		93B474081B648C4C00613FB6 /* graphics_ios */ = {
@@ -501,7 +501,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PROJECT_DIR}/script/copy_headers.sh\" \"src\"";
+			shellScript = "";
 		};
 		93B474721B648D4A00613FB6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -514,7 +514,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PROJECT_DIR}/script/copy_headers.sh\" \"src\"";
+			shellScript = "";
 		};
 		93B474731B648D4F00613FB6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -527,7 +527,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PROJECT_DIR}/script/copy_headers.sh\" \"src\"";
+			shellScript = "";
 		};
 /* End PBXShellScriptBuildPhase section */
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#  copy_headers.sh
+#  gitignore.sh
 #
 #  The MIT License
 #
@@ -25,11 +25,20 @@
 #  DEALINGS IN THE SOFTWARE.
 #
 
-readonly PATHS=$@
+readonly PROJECT_DIR="$(cd "$(dirname "$0")/../"; pwd)"
+readonly FILES=("Global/macOS" "Global/Windows" "Global/Xcode" "VisualStudio")
 
-for path in ${PATHS}; do
-  cd "${PROJECT_DIR}/${path}"
-  for header in $(find . -name "*.h"); do
-    ditto "${header}" "${BUILT_PRODUCTS_DIR}/include/${header}"
+repository_dir=$(mktemp -d -t "com.shotamatsuda.gitignore")
+
+concat_gitignore() {
+  for file in "${FILES[@]}"; do
+    echo "# https://github.com/github/gitignore/blob/master/${file}.gitignore"
+    echo ""
+    cat "${repository_dir}/${file}.gitignore"
+    echo ""
   done
-done
+}
+
+git clone "https://github.com/github/gitignore.git" "${repository_dir}"
+concat_gitignore > "${PROJECT_DIR}/.gitignore"
+rm -rf "${repository_dir}"
